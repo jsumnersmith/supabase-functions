@@ -15,7 +15,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^3.6.2",
+    "@supabase/supabase-js": "^1.15.1",
+    "gatsby": "^3.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
