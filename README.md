@@ -1,54 +1,44 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=supabase-functions">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Supabase with Functions in Gatsby
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Fork & Install Project.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+    Fork this repo and pull it down to your development environment. Navigate into your new site’s directory and install dependencies.
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd supabase-function/
+    yarn
     ```
 
-3.  **Open the code and start customizing!**
+2.  **Setup Supbase Project**
 
-    Your site is now running at http://localhost:8000!
+    Read up on [how to create a project in Supabase](https://supabase.io/docs/guides/platform). Add a new table called `submissions` and add text columns for `name`, `email`, and `message`.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    Get you API keys and create a file called `.env.development`. Add those keys to the file using the following variables.
 
-4.  **Learn more**
+    ```.env
+    SUPABASE_URL=https://{your_project_id}.supabase.co
+    SUPABASE_ANON_KEY={your_anon_key}
+    ```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+3.  **Run Locally**
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    Run the local development command:
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+     ```shell
+    gatsby develop
+    ```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    Visit `https://localhost:8000` to see the form in action. Pull response in a JSON api at `https://localhost:8000/api/get-responses`. Watch form submissions come in either on your api endpoint or in your supabase project.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+4.  **Deploy to Gatbsy Cloud**
+    You can deploy this repo directly to Gatsby Cloud and 
+   [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/jsumnersmith/supabase-functions)
