@@ -46,4 +46,4 @@
     
     You can deploy this repo directly to Gatsby Cloud and 
    
-   [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/jsumnersmith/supabase-functions)
+    [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/jsumnersmith/supabase-functions)
